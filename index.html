@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="https://bolixinyu.github.io/CCA-Attention-Page/"/>
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="CCA-Attention, CCA, Efficient Attention, LLMs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Core Context Aware Transformers for Long Context Language Modeling</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Core Context Aware Transformers for Long Context Language Modeling</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://chenyaofo.com/" target="_blank">Yaofo Chen</a><sup>*1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.youzeng.com.cn/" target="_blank">Zeng You</a><sup>*1 2</sup>,</span>
+                  <span class="author-block">
+                    <p>Shuhai Zhang<sup>*1 3</sup>,</p>
+                  </span>
+				  <span class="author-block">
+                    <p>Haokun Li<sup>1 2</sup>,</p>
+                  </span>
+				  <span class="author-block">
+                    <p>Yiru Li<sup>1</sup>,</p>
+                  </span>
+				  <span class="author-block">
+                    <p>Yaowei Wang<sup>†2 4</sup>,</p>
+                  </span>
+				  <span class="author-block">
+                    <p>Mingkui Tan<sup>†1 3 5</sup></p>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>South China University of Technol-
+ogy<br>
+						<sup>2</sup>Peng Cheng Laboratory<br>
+						<sup>3</sup>Pazhou Laboratory<br>
+						<sup>4</sup>Harbin Institute of Technology<br>
+						<sup>5</sup>Key Laboratory of Big Data and Intelligent Robot, Ministry of Education<br>
+						<br>
+						<em>International Conference on Machine Learning (ICML) 2025</em></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+					<span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2412.12465" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- poster PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/CCA_Poster.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Poster</span>
+                    </a>
+                  </span>
+
+				  <!-- slides -->
+				  <span class="link-block">
+                      <a href="static/pdfs/CCA_Attention_slides.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Slides</span>
+                    </a>
+                  </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/chenyaofo/CCA-Attention" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2412.12465" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Transformer-based Large Language Models (LLMs) have exhibited remarkable success in extensive tasks primarily attributed to the self- attention mechanism, which requires a token to consider all preceding tokens as its context to com- pute attention. However, when the context length L becomes very large (e.g., 128K), the amount of potentially redundant information in the con- text tends to increase. The redundant context not only hampers the modeling representation perfor- mance but also incurs unnecessary computational and storage overhead. In this paper, we propose a plug-and-play Core Context Aware (CCA) Atten- tion for efficient long-context modeling, compris- ing two complementary modules: 1) Globality- aware pooling module groups input tokens and dynamically compresses each group into one core token based on their significance. In this way, our method automatically focuses and strength- ens core context while diminishing redundancy during the learning process, leading to effective long-term dependency modeling. 2) Locality- preserving module incorporates neighboring to- kens to preserve local context for detailed repre- sentation. Notably, our CCA-Attention is able to replace the self-attention module in existing LLMs with minimal fine-tuning cost. Extensive experimental results show the superiority of our method in both long-context modeling and compu- tational efficiency over state-of-the-art methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method Overview -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Method Overview</h2>
+		<div>
+			<i class="fas fa-bolt"></i>
+			<strong>Efficiency:</strong> Achieves linear complexity \(O(Lm + Ls)\) vs. quadratic \(O(L^2)\), <strong>7.9x</strong> speedup on 128K context
+		</div>
+		<div class="key-point">
+			<i class="fas fa-memory"></i>
+			<strong>Memory:</strong> Reduces KV cache by <strong>93%</strong> on 128K context
+		</div>
+		<br>
+		
+	  <div class="item">
+		<center><img src="static/images/method.png" width="80%"></center>
+		<p>Illustration of CCA-Attention, which includes two components: 1) Globality-aware pooling module encapsulates the input tokens X into core tokens C according to the importance (Eqn. (2)). The core tokens C serve as representative proxies of X for attention, thereby reducing computational costs. 2) Locality-preserving module incorporates the local context from neighboring tokens, acting as supplement for the globality-aware pooling module. We produce the final output Att by fusing these two modules based on Eqn. (5).</p>
+	  </div>
+	  <p>We propose a novel attention mechanism that replaces standard self-attention in Transformers to handle long contexts efficiently. CCA-Attention consists of two synergistic components: 1)<em>Globality-aware Pooling Module</em> and 2)<em>Locality-preserving Module</em>.</p><br>
+
+	  <div class="method-card">
+            <h4><i class="fas fa-globe-americas"></i> Globality-aware Pooling Module</h4>
+            <p>Given input sequence $\mathbf{X} \in \mathbb{R}^{L \times d}$, we:</p>
+            <ol>
+                <li><strong>Group tokens</strong> into $m = \lceil L/g \rceil$ groups, each with $g$ tokens</li>
+                <li><strong>Compute core tokens</strong> via importance-weighted pooling:
+                    <div class="formula">
+                        \[
+                        \mathbf{c}_i = \text{softmax}\left(\frac{\mathbf{Q}_{ig}\mathbf{K}^\top_{\mathcal{I}_i}}{\sqrt{d}}\right)\mathbf{X}^G_{\mathcal{I}_i}
+                        \]
+                    </div>
+                    where $\mathcal{I}_i = \{(i-1)g+1, ..., ig\}$ is the $i$-th group's indices
+                </li>
+                <li><strong>Derive global keys/values</strong>:
+                    <div class="formula">
+                        \[
+                        \widetilde{\mathbf{K}}^{\rm G}_{\mathcal{T}_i} = [\mathbf{K}^{\rm G}_1; \cdots; \mathbf{K}^{\rm G}_j], \quad 
+                        \mathbf{K}^{\rm G} = \mathbf{C}\mathbf{W}^K
+                        \]
+                    </div>
+                    where:
+                    <ul>
+                        <li>$\mathbf{C} = [\mathbf{c}_1; ...; \mathbf{c}_m]$ is the core token sequence</li>
+                        <li>$j = \max(0, \lfloor(i-s)/g \rfloor)$ ensures causal attention</li>
+                        <li>$\mathbf{W}^K$ are standard key projection parameters</li>
+                    </ul>
+                </li>
+            </ol>
+        </div><br>
+            
+			<strong class="subtitle"><i class="fas fa-map-marker-alt"></i> Locality-preserving Module</strong>
+			<p>Maintains a local window of \(s\) neighboring tokens to preserve fine-grained details:</p>
+			<div class="formula">
+				\[
+				\widetilde{\mathbf{K}}^{\rm L}_{\mathcal{U}_i} = [\mathbf{K}^{\rm L}_k; \cdots; \mathbf{K}^{\rm L}_i]
+				\]
+			</div>
+			<div class="formula">
+				\[
+				k = \max(1, i-s-((i-s) \bmod g))
+				\]
+			</div>
+
+		<strong class="subtitle"><i class="fas fa-link"></i> Fusion & Complexity</strong>
+		<p>Combines both modules via differentiable fusion:</p>
+		<div class="formula">
+			\[
+			\mathbf{Att}_i = \text{softmax}\left(\frac{\mathbf{Q}_i[\widetilde{\mathbf{K}}^{\rm G}_{\mathcal{T}_i}; \widetilde{\mathbf{K}}^{\rm L}_{\mathcal{U}_i}]^\top}{\sqrt{d}}\right)[\widetilde{\mathbf{V}}^{\rm G}_{\mathcal{T}_i}; \widetilde{\mathbf{V}}^{\rm L}_{\mathcal{U}_i}]
+			\]
+		</div>
+    
+	</div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <h2 class="title"><i class="fas fa-chart-line"></i> Experimental Results</h2>
+    
+    <strong class="subtitle"><i class="fas fa-trophy"></i>Comprehensive Benchmark Evaluation</strong>
+    <p>
+        We evaluate CCA-LLM across multiple benchmarks to assess its effectiveness in long-context modeling. Our experiments compare against three categories of baselines:
+    </p>
+    <ul>
+        <li><strong>Full self-attention</strong> (Vanilla SA): The standard Transformer baseline</li>
+        <li><strong>Fixed-pattern sparse attention</strong>: StreamingLLM, LM-Infinite</li>
+        <li><strong>Dynamic sparse attention</strong>: MInference</li>
+    </ul>
+	<br>
+
+    <div class="content">
+        <strong>Comparisons on LongBench-E</strong>:
+        <p>
+            Table 1 demonstrates CCA-LLM's superior performance on the LongBench-E benchmark with LLaMA2-7B at 32K and 80K context lengths with a 3.5× speedup and 46% memory reduction compared to Vanilla SA.
+        </p>
+		<br>
+		<div class="item">
+		<center><img src="static/images/table1.png" width="80%"></div></center>
+        
+    </div>
+
+	<div class="content">
+        <strong> Inference Flexibility</strong>:
+		<p>CCA-Attention enables <strong>real-time adaptation</strong> to computational constraints by dynamically adjusting its attention granularity, achieving optimal speed-accuracy tradeoffs without model retraining.</p>
+		<br>
+		<div class="item">
+		<center><img src="static/images/flexity.png" width="40%"></div></center>
+        
+    </div>
+
+	<div class="content">
+        <strong>Computational Efficiency</strong>:
+		<p>CCA-LLM achieves <strong>end-to-end acceleration</strong> across all inference stages while significantly reducing memory footprint, outperforming existing methods (like MInference) that only optimize partial computation phases.</p>
+		<strong>7.9x</strong> inference speedup on 128K tokens and <strong>93%</strong> KV cache reduction in memory usage compared to Vanilla Self-Attention.
+		<br>
+		<div class="item">
+		<center><img src="static/images/efficiency.png" width="80%"></div></center>
+        
+    </div>
+
+
+
+
+    <div class="highlight">
+        <h3><i class="fas fa-lightbulb"></i> Key Insights</h3>
+        <ol>
+            <li><strong>Dynamic Compression Works</strong>: Core token compression effectively preserves semantic information while reducing computation</li>
+            <li><strong>Local Context is Crucial</strong>: The locality-preserving module accounts for 23% of performance gains in our ablation</li>
+            <li><strong>Practical Deployment</strong>: Tunable g/s parameters allow adaptation to different hardware constraints</li>
+        </ol>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/CCA_Poster.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{chen2025core,
+      title={Core Context Aware Transformers for Long Context Language Modeling}, 
+      author={Yaofo Chen and Zeng You and Shuhai Zhang and Haokun Li and Yirui Li and Yaowei Wang and Mingkui Tan},
+      year={2025},
+      booktitle={International Conference on Machine Learning},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
