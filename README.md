@@ -1,8 +1,5 @@
 # CCA-Attention
 
-**We will open-source all the code several days after the AAAI deadline (August 1st)..**
-
-
 This repository provides the code for the paper *"Core Context Aware Transformers for Long Context Language Modeling"*, which is accepted by ICML 2025.
 
 ## Abstract
@@ -53,9 +50,11 @@ bash run_scripts/finetune.sh /path/to/output $max_context_length 1000 $window_si
 
 ## Related Works
 We implement this repository based on the following related works:
+
 - Code based on [LongLoRA](https://github.com/dvlab-research/LongLoRA)
 - Data from [Long-Context-Data-Engineering](https://github.com/FranxYao/Long-Context-Data-Engineering)
 - LlaMA2 from [Meta](https://www.llama.com/llama2/)
+
 Thanks for their great works!
 
 ## Citation
