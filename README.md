@@ -45,7 +45,7 @@ We finetune the models with per-source length upsampled data produced by [Long-C
 We provide a simple way to finetune the pre-trained model with our CCA-Attention module. The following is an example of finetuning the pre-trained Llama model with CCA-Attention.
 You can modify the `finetune.sh` file to change the parameters of the finetuning process, including model path and dataset path.
 ```bash
-bash run_scripts.sh finetune.sh /path/to/output $max_context_length 1000 $window_size $group_size cca
+bash run_scripts/finetune.sh /path/to/output $max_context_length 1000 $window_size $group_size cca
 ```
 
 ## Related Works
