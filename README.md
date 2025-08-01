@@ -1,5 +1,8 @@
 # CCA-Attention
 
+**We will open-source all the code several days after the AAAI deadline (August 1st)..**
+
+
 This repository provides the code for the paper *"Core Context Aware Transformers for Long Context Language Modeling"*, which is accepted by ICML 2025.
 
 ## Abstract
