@@ -26,8 +26,11 @@ We provide a simple way to replace the self-attention module in the Transformer 
 import transformers
 from codebase.core.simple_pooling_attn import replace_attn_forward
 
+# for Qwen2 (2.5) series
+# from codebase.core.qwen2_attn import replace_qwen_attn_forward
+
 # Replace the self-attention module with CCA-Attention module prior to all codes
-replace_attn_forward(group_size, window_size, pool_func="cca")
+replace_attn_forward(group_size, window_size, pool_func="cca") # replace with replace_qwen_attn_forward for Qwen2 (2.5) series
 
 # Load the pre-trained model
 model = transformers.AutoModelForCausalLM.from_pretrained(
